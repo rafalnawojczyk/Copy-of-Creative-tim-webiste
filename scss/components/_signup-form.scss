@@ -1,0 +1,40 @@
+.signup-form {
+    display: flex;
+    gap: 1.2rem;
+
+    &__email {
+        width: 66%;
+        color: rgb(73, 80, 87);
+        font-size: 1.4rem;
+        font-family: inherit;
+
+        padding: 0.8rem 1.2rem;
+
+        border-radius: 0.8rem;
+
+        &::placeholder {
+            color: rgb(160, 170, 180);
+            font-size: 1.4rem;
+            font-family: inherit;
+        }
+    }
+
+    &__submit {
+        cursor: pointer;
+        width: 33%;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        letter-spacing: -0.04rem;
+        border-radius: 9px;
+        border: none;
+
+        padding: 1.2rem 3.2rem;
+
+        transform: scale(1);
+        transition: all 0.3s;
+    }
+}

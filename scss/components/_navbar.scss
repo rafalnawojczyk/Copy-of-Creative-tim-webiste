@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #141629;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.8rem 1.6rem;
+}
+
+.nav {
+    display: flex;
+
+    &__logo {
+        font-size: 0.875rem;
+
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+
+        margin-right: 1rem;
+    }
+
+    &__logo-img {
+        width: 11rem;
+    }
+
+    &__list {
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+    &:link,
+    &:visited {
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        letter-spacing: -0.025rem;
+        border-radius: 9px;
+
+        padding: 0.8rem 3.2rem;
+
+        transform: scale(1);
+        transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+        transform: scale(1.1);
+    }
+
+    &--white {
+        color: $color-text-dark;
+        background-color: rgb(233, 236, 239);
+    }
+
+    &--primary {
+        color: #fff;
+        background-image: linear-gradient(310deg, rgb(234, 6, 6), rgb(255, 102, 124));
+    }
+}
