@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+
     width: 100%;
 
     display: flex;
@@ -15,6 +16,7 @@
 
 .nav {
     display: flex;
+    justify-content: space-between;
 
     &__logo {
         font-size: 0.875rem;
@@ -35,7 +37,5 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-
-        margin-left: auto;
     }
 }

@@ -1,16 +1,12 @@
 .card {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 50% 50%;
     position: relative;
     background-color: #111322;
     color: #fff;
 
+    border-radius: 1.6rem;
     padding: 6.4rem 2.4rem 6.4rem 2.4rem;
-
-    // padding: 2.4rem;
-
-    // margin-top: 6.4rem;
-    // margin-bottom: 6.4rem;
 
     &__box {
         display: grid;
@@ -18,10 +14,16 @@
         row-gap: 12rem;
     }
     &__left {
-        align-self: center;
-        padding-left: 4.8rem;
+        padding-right: 3rem;
+        padding-left: 2rem;
+        width: 90%;
+        justify-self: start;
     }
     &__right {
+        padding-right: 2rem;
+        padding-left: 3rem;
+        width: 90%;
+        justify-self: end;
     }
 
     &__title {
@@ -53,7 +55,6 @@
 
     &__image {
         margin-top: -3rem;
-        margin-top: -3rem;
 
         max-width: 60rem;
         height: auto;
@@ -63,11 +64,11 @@
         position: absolute;
 
         &--left {
-            transform: translate(-10%, -20%);
+            transform: translate(-5%, -20%);
         }
 
         &--right {
-            transform: translate(20%, -20%);
+            transform: translate(5%, -20%);
         }
     }
 }

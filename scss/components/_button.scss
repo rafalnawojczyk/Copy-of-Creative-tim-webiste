@@ -40,4 +40,18 @@
         color: #fff;
         background-image: linear-gradient(310deg, rgb(234, 6, 6), rgb(255, 102, 124));
     }
+    &--greyed {
+        opacity: 0.65;
+        color: #3a416f;
+        background-image: linear-gradient(310deg, rgb(206, 212, 218), rgb(235, 239, 244));
+        cursor: auto !important;
+        pointer-events: none;
+
+        &:hover,
+        &:active {
+            transform: scale(1) !important;
+            box-shadow: none !important;
+            opacity: 0.65 !important;
+        }
+    }
 }
