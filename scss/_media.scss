@@ -1,19 +1,14 @@
-@media only screen and (max-width: 37.5em) {
+@media only screen and (min-width: 112.5em) {
     html {
-        font-size: 46%;
+        font-size: 75%;
     }
-}
-@media only screen and (max-width: 56.25em) {
-    html {
-        font-size: 50%;
+
+    .featured__img {
+        transform: translateX(20%);
     }
-}
-@media only screen and (max-width: 75em) {
-    // html {
-    //     font-size: 56.25%;
-    // }
 }
 
+//1300px
 @media only screen and (max-width: 81.25em) {
     .card {
         &__image {
@@ -27,12 +22,354 @@
     }
 }
 
-@media only screen and (min-width: 112.5em) {
+//1100px
+@media only screen and (max-width: 68.75em) {
     html {
-        font-size: 75%;
+        font-size: 56.25%;
     }
 
-    .featured__img {
-        transform: translateX(20%);
+    .featured {
+        &__logos {
+            gap: 2.5rem;
+        }
+
+        &__logo-box {
+            gap: 2.5rem;
+        }
+    }
+}
+
+//980px
+@media only screen and (max-width: 61.25em) {
+    .statistics {
+        padding: 1.2rem 2rem;
+
+        &__text {
+            font-size: 1.2rem;
+        }
+    }
+
+    .featured {
+        &__logos {
+            gap: 2rem;
+        }
+
+        &__logo-box {
+            gap: 2rem;
+
+            img {
+                max-width: 8rem;
+            }
+        }
+    }
+
+    .signup-form {
+        flex-direction: column;
+
+        &__submit {
+            display: inline-block;
+            width: 66%;
+            align-self: stretch;
+        }
+    }
+
+    .header {
+        &__column {
+            width: 50%;
+        }
+    }
+
+    .card {
+        // background-color: red;
+        padding: 2.8rem 1.8rem 2.8rem 1.8rem;
+
+        &__box {
+            gap: 8rem;
+        }
+
+        &__r {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__right {
+            align-self: center;
+        }
+
+        &__left {
+            align-self: center;
+        }
+
+        &__img-box {
+            width: 100%;
+        }
+        &__image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+
+            &--right {
+                transform: translate(0, 0);
+            }
+
+            &--left {
+                transform: translate(0, 0);
+            }
+        }
+    }
+}
+
+//800px
+@media only screen and (max-width: 50em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+//700px
+
+@media only screen and (max-width: 43.75em) {
+    .pricing {
+        &__card {
+            margin-inline: 0.8rem;
+            flex: 0 0 33%;
+            padding: 1.2rem;
+            transform: scale(0.95);
+        }
+    }
+
+    .timeline {
+        grid-template-rows: repeat(6, 8rem);
+        &__container {
+            margin-top: 5rem;
+            margin-bottom: 10rem;
+        }
+
+        &__step {
+            &--6 {
+                &::after {
+                    height: 160%;
+                }
+            }
+        }
+    }
+
+    .faq-section {
+        margin-top: 8rem;
+        color: #fff;
+        margin-bottom: 10rem;
+    }
+
+    .footer {
+        margin-top: 6rem;
+        &__container {
+            max-width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8rem;
+            margin-bottom: 6rem;
+        }
+        &__separator--upper {
+            display: flex;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__column {
+            max-width: 50%;
+        }
+    }
+
+    .accordion {
+        margin-top: 6rem;
+
+        display: grid;
+
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-bottom: 0;
+
+        &__img-box {
+            max-width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__r {
+        }
+
+        &__reverse {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .header {
+        padding-bottom: 4rem;
+    }
+
+    .featured {
+        &__logos {
+            width: 70%;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .statistics {
+        max-width: 80vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        transform: translateY(-20%);
+        &__left {
+            justify-content: center;
+        }
+
+        &__right {
+            width: 40%;
+            justify-content: center;
+        }
+        &__text {
+            font-size: 1rem;
+        }
+
+        &__title {
+            font-size: 1.2rem;
+        }
+
+        &__card {
+            padding-right: 0.8rem;
+            padding-left: 0.8rem;
+        }
+        &__card--line::before {
+            display: none;
+        }
+    }
+
+    .card {
+        grid-auto-flow: dense;
+        grid-template-columns: 90%;
+
+        &__left {
+            justify-self: end;
+            grid-row: 1 / 2;
+        }
+
+        &__right {
+            grid-row: 1 / 2;
+        }
+    }
+    .footer {
+        &__container {
+            max-width: 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        &__column {
+            max-width: 100%;
+        }
+    }
+}
+
+//600px
+@media only screen and (max-width: 37.5em) {
+    html {
+        font-size: 45%;
+    }
+
+    .pricing {
+        padding: 4rem 1rem 4rem 1rem;
+        flex-direction: column;
+        gap: 4rem;
+        max-width: 70%;
+        &__card--best {
+            order: -1;
+        }
+
+        &__card--sold {
+            display: none;
+        }
+
+        &__payments {
+            margin-top: 3rem;
+        }
+    }
+    .featured {
+        &__logos {
+            width: 74%;
+        }
+    }
+
+    .header {
+        &__column {
+            width: 60%;
+        }
+    }
+
+    .timeline {
+        grid-template-rows: repeat(6, 9rem);
+        &__step {
+            &--right {
+                padding-left: 2rem;
+            }
+            &--left {
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .testimonials {
+        &__box--3 {
+            flex: 1 1 50%;
+            padding: 1.8rem;
+        }
+        &__box--2 {
+            flex: 1 1 50%;
+            padding: 1.8rem;
+        }
+        &__box--closed {
+            display: none;
+        }
+    }
+}
+
+//480px
+@media only screen and (max-width: 30em) {
+    .header {
+        margin-left: 0;
+        margin-right: 0;
+        background-position: 40%;
+        &__column {
+            width: 80%;
+        }
+    }
+
+    .pricing {
+        max-width: 85%;
+    }
+
+    .statistics {
+        max-width: 90%;
+        gap: 1.6rem;
+        &__numbers {
+            font-size: 2.8rem;
+        }
+
+        &__right {
+            width: 60%;
+        }
     }
 }

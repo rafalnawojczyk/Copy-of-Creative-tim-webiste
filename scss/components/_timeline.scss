@@ -1,7 +1,7 @@
 .timeline {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: repeat(6, 10rem);
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -33,7 +33,7 @@
     }
 
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 2px;
         height: 100%;
@@ -50,7 +50,7 @@
             padding-right: 4.8rem;
 
             &::before {
-                content: "";
+                content: '';
                 position: absolute;
                 width: 2.6rem;
                 height: 2.6rem;
@@ -68,7 +68,7 @@
             padding-left: 4.8rem;
 
             &::before {
-                content: "";
+                content: '';
                 position: absolute;
                 width: 2.6rem;
                 height: 2.6rem;
@@ -106,7 +106,7 @@
             grid-column: 1 / 2;
 
             &::after {
-                content: "";
+                content: '';
                 position: absolute;
                 width: 2px;
                 height: 140%;
@@ -123,7 +123,7 @@
             grid-column: 2 / 3;
 
             &::after {
-                content: "";
+                content: '';
                 position: absolute;
                 width: 2px;
                 height: 140%;
